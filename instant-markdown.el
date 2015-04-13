@@ -1,3 +1,16 @@
+;;; instant-markdown.el --- Really Realtime Markdown previews for Emacs.
+
+;; Copyright (C) 2015 Blake Miller
+
+;; Author: Blake Miller <blak3mill3r@gmail.com>
+;; Version: 0.1.0
+;; Keywords: markdown, preview, live
+;; URL: https://github.com/blak3mill3r/instant-markdown.el
+
+;;; Commentary:
+
+;; Realtime Markdown previews for Emacs, updates as the contents of the buffer change
+
 (defun instant-md-start ()
   (interactive)
   (call-process-shell-command "instant-markdown-d &>/dev/null &")
